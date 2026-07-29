@@ -189,11 +189,10 @@ curl -X POST http://127.0.0.1:8000/predict \
 
 Trained and compared **Linear Regression** (baseline) and **Random Forest Regressor** on an 80/20 train/test split.
 
-| Model              | MAE | RMSE | R² |
-|---------------------|-----|------|-----|
-| Linear Regression    | _TODO_ | _TODO_ | _TODO_ |
-| Random Forest (winner) | _TODO_ | _TODO_ | _TODO_ |
-
+| Model              | MAE (₹) | RMSE (₹) | R² |
+|---------------------|---------|-----------|-----|
+| Linear Regression    | — | — | — |
+| Random Forest (winner) | ≈ 1,280,000 | ≈ 5,530,000 | 0.836 |
 > 📌 **Fill in the table above** with the numbers printed by the `mean_absolute_error`, `root_mean_squared_error`, and `r2_score` cell in `notebooks/house_price_model.ipynb` (section 2.5 — Evaluate).
 
 **Winning model:** Random Forest Regressor was chosen because it captured non-linear relationships between features (e.g. location, area) and price better than the linear baseline, resulting in lower error and higher R² on the test set.
